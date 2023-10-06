@@ -2,6 +2,4 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-   alert('ad')
-
 })
