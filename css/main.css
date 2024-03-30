@@ -1,81 +1,112 @@
 :root {
-    --accent: orange;
-    --text: #333;
-    --regular-text: 16px;
-    --lineheight: 1.65;
-    --userfont: roboto-st, sans-serif;
-    --systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+  --accent: orange;
+  --text: #333;
+  --regular-text: 16px;
+  --lineheight: 1.65;
+  --userfont: roboto-st, sans-serif;
+  --systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
 }
 
 @font-face {
-    src: url("../fonts/roboto-regular-webfont.woff2") format("woff2");
-    font-family: "roboto-st";
-    font-weight: 400;
-    font-style: normal;
+  src: url("../fonts/roboto-regular-webfont.woff2") format("woff2");
+  font-family: "roboto-st";
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-    src: url("../fonts/roboto-italic-webfont.woff2") format("woff2");
-    font-family: "roboto-st";
-    font-weight: 400;
-    font-style: italic;
+  src: url("../fonts/roboto-italic-webfont.woff2") format("woff2");
+  font-family: "roboto-st";
+  font-weight: 400;
+  font-style: italic;
 }
 
 @font-face {
-    src: url("../fonts/roboto-bold-webfont.woff2") format("woff2");
-    font-family: "roboto-st";
-    font-weight: 700;
-    font-style: normal;
+  src: url("../fonts/roboto-bold-webfont.woff2") format("woff2");
+  font-family: "roboto-st";
+  font-weight: 700;
+  font-style: normal;
 }
 
 @font-face {
-    src: url("../fonts/roboto-bolditalic-webfont.woff2") format("woff2");
-    font-family: "roboto-st";
-    font-weight: 700;
-    font-style: italic;
+  src: url("../fonts/roboto-bolditalic-webfont.woff2") format("woff2");
+  font-family: "roboto-st";
+  font-weight: 700;
+  font-style: italic;
 }
 
-::placeholder {
-    color: #666;
+.header,
+.footer,
+.main,
+.section {
+  position: relative;
 }
 
-input,
-textarea {
-    outline: none;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-input:focus:required:invalid,
-textarea:focus:required:invalid {
-    border-color: red;
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
 }
 
-input:required:valid,
-textarea:required:valid {
-    border-color: green;
+ul li {
+  list-style-type: none;
+}
+
+a:focus,
+input:focus {
+  outline: none;
 }
 
 body {
-    font-family: var(--userfont);
-    font-size: var(--regular-text);
-    line-height: var(--lineheight);
-    color: var(--text);
-    min-width: 320px;
-    position: relative;
-    overflow-x: hidden;
+  display: block;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-size: var(--regular-text);
+  font-family: var(--userfont);
+  line-height: normal;
+  background-color: #ffffff;
+  min-width: 380px;
+  font-weight: 400;
+  color: var(--text);
 }
 
-.image {
-    max-width: 100%;
-    margin-bottom: var(--bs-gutter-x);
-    border-radius: 4px;
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 0 10px;
 }
 
-.accent {
-    color: var(--accent);
-    font-weight: bold;
+@media screen and (max-width: 1700px) {
 }
 
-header,
-footer {
-    position: relative;
+@media screen and (max-width: 1500px) {
+}
+
+@media screen and (max-width: 1400px) {
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 770px) {
+}
+
+@media screen and (max-width: 576px) {
 }
