@@ -1,10 +1,7 @@
 :root {
   --accent: orange;
   --text: #333;
-  --regular-text: 16px;
-  --lineheight: 1.65;
-  --userfont: roboto-st, sans-serif;
-  --systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+  --font: roboto-st, sans-serif;
 }
 
 @font-face {
@@ -75,8 +72,8 @@ body {
   position: relative;
   overflow-x: hidden;
   overflow-y: auto;
-  font-size: var(--regular-text);
-  font-family: var(--userfont);
+  font-size: 16px;
+  font-family: var(--font);
   line-height: normal;
   background-color: #ffffff;
   min-width: 380px;
